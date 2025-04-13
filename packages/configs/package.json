@@ -1,0 +1,50 @@
+{
+  "name": "@rsstack/configs",
+  "version": "0.0.0",
+  "description": "A shared collection of opinionated configs.",
+  "keywords": [
+    "commitlint",
+    "cspell",
+    "eslint",
+    "prettier",
+    "stylelint"
+  ],
+  "homepage": "https://github.com/isRyanSu/rsstack/tree/main/packages/configs#readme",
+  "bugs": {
+    "url": "https://github.com/isRyanSu/rsstack/issues",
+    "email": "iamryansu@icloud.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/isRyanSu/rsstack.git",
+    "directory": "packages/configs"
+  },
+  "license": "MIT",
+  "author": "Ryan Su <iamryansu@icloud.com> (https://github.com/isRyanSu)",
+  "type": "module",
+  "exports": {
+    "./commitlint": "./dist/commitlint/index.js",
+    "./cspell": "./dist/cspell/index.js",
+    "./eslint": "./dist/eslint/index.js",
+    "./prettier": "./dist/prettier/index.js",
+    "./stylelint": "./dist/stylelint/index.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "check-types": "tsc",
+    "clean": "rm -rf dist",
+    "dev": "tsup --watch",
+    "prepublishOnly": "bun run build"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "tsup": "8.4.0"
+  },
+  "packageManager": "bun@1.2.9",
+  "engines": {
+    "node": "^18.0.0 || ^20.0.0 || >=22.0.0"
+  }
+}

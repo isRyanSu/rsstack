@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    /* Base */
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"]
+    },
+    "allowJs": true,
+    "esModuleInterop": true,
+    "isolatedModules": true,
+    "moduleDetection": "force",
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    "target": "ESNext",
+    "verbatimModuleSyntax": true,
+
+    /* Strictness */
+    "strict": true,
+    "noUncheckedIndexedAccess": true,
+    "noImplicitOverride": true,
+
+    /* If NOT transpiling with TypeScript */
+    "module": "Preserve",
+    "noEmit": true,
+
+    /* If NOT running in the DOM */
+    "lib": ["ESNext"]
+  }
+}

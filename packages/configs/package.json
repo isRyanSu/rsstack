@@ -39,7 +39,10 @@
     "dev": "tsup --watch",
     "prepublishOnly": "bun run build"
   },
-  "dependencies": {},
+  "dependencies": {
+    "commitlint-config-gitmoji": "2.3.1",
+    "czg": "1.11.1"
+  },
   "devDependencies": {
     "tsup": "8.4.0"
   },
